@@ -1,9 +1,17 @@
-import sund
 import os
 import json
 import pandas as pd
 import numpy as np
-import streamlit_app as st
+import streamlit as st
+import sys
+
+import subprocess
+import sys
+
+subprocess.check_call([sys.executable, "-m", "pip", "install", "--target=./sund", 'https://isbgroup.eu/edu/assets/sund-1.0.1.tar.gz#sha256=669a1d05c5c8b68500086e183d831650277012b3ea57e94356de1987b6e94e3e'])
+
+sys.path.append('./sund')
+import sund
 
 # Setup the model and simulation
 
