@@ -5,8 +5,6 @@ import pandas as pd
 import numpy as np
 import streamlit_app as st
 
-st.elements.utils._shown_default_value_warning=True # This is not a good solution, but it hides the warning of using default values and sessionstate api
-
 # Setup the model and simulation
 
 model_name = 'test_model'
